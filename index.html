@@ -47,57 +47,14 @@
         }
         header nav {
             float: right;
-            margin-top: 10px;
         }
-        .showcase {
-            min-height: 400px;
-            background: url('showcase.jpg') no-repeat center center/cover;
-            text-align: center;
-            color: #000000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        section {
+            padding: 20px 0;
         }
-        .showcase h1 {
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-        .showcase p {
-            font-size: 20px;
-        }
-        .bio {
-            padding: 20px;
+        .skills, .projects {
             background: #fff;
-            margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .bio h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .bio p {
-            line-height: 1.6;
-        }
-        .skills {
             padding: 20px;
-            background: #000000;
-            margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .skills h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .skills ul {
-            list-style: none;
-            padding: 0;
-        }
-        .skills ul li {
-            background: #77aaff;
-            color: #fff;
-            margin: 5px 0;
-            padding: 10px;
-            text-align: center;
+            margin: 20px 0;
         }
         footer {
             background: #333;
@@ -116,44 +73,41 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">首頁</a></li>
-                    <li><a href="#">關於我</a></li>
-                    <li><a href="#">聯絡我</a></li>
+                    <li><a href="#about">關於我</a></li>
+                    <li><a href="#skills">技能</a></li>
+                    <li><a href="#projects">項目</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="showcase">
-        <div class="container">
-            <h1>歡迎來到我的個人網站</h1>
-            <p>這裡是我的個人簡介，歡迎了解更多關於我的資訊。</p>
-        </div>
+    <section id="about" class="container">
+        <h2>關於我</h2>
+        <p>這裡是我的個人簡介。我是一名網頁開發者，擁有多年的經驗。</p>
     </section>
 
-    <section class="bio">
-        <div class="container">
-            <h2>關於我</h2>
-            <p>你好，我是楊淳仁。我是一名學生，我對智慧商務有著濃厚的興趣。我擁有[你的學歷或工作經驗]，並且在[你的專業領域]有著豐富的經驗。</p>
-            <p>在我的空閒時間，我喜歡[你的愛好或興趣]。我相信持續學習和成長是成功的關鍵，因此我不斷尋求新的挑戰和機會來提升自己。</p>
-            <p>感謝你訪問我的網站，期待與你交流。</p>
-        </div>
+    <section id="skills" class="container skills">
+        <h2>技能</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
     </section>
 
-    <section class="skills">
-        <div class="container">
-            <h2>技能</h2>
-            <ul>
-                <li>技能 1</li>
-                <li>技能 2</li>
-                <li>技能 3</li>
-                <li>技能 4</li>
-            </ul>
-        </div>
+    <section id="projects" class="container projects">
+        <h2>項目</h2>
+        <ul>
+            <li>項目一</li>
+            <li>項目二</li>
+            <li>項目三</li>
+        </ul>
     </section>
 
     <footer>
-        <p>版權所有 &copy; 2023 [你的名字]</p>
+        <p>版權所有 &copy; 2023</p>
     </footer>
 </body>
 </html>
